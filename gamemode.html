@@ -1,108 +1,118 @@
+gamemode.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Game Modes</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="gamemode.css">
+  <meta charset="UTF-8">
+  <title>Game Modes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="gamemode.css">
 </head>
-<body>
-	<nav class="navbar navbar-expand-lg sticky-top" id="nav1">
-		<div class="container">
-			<a class="navbar-brand" href="#">Guardian Tales Game Modes</a>
-		</div>
-	</nav>
 
-	<div class="game-mode">
-		<h2 class="mode-title">Adventure</h2>
-		<p class="mode-description">
-			Gameplay Mechanics: This is the core single-player experience where players control the Guardian Knight or other unlocked heroes in a top-down view. The mode combines real-time combat, puzzle-solving, and exploration across various chapters. Players navigate through story-driven stages, defeat enemies, solve environmental puzzles, and uncover hidden secrets to progress.<br>
+<body>	
+  <nav class="navbar navbar-expand-lg sticky-top" id="nav1">
+    <div class="container">
+      <a class="navbar-brand" href="GROUP14.html">Guardian Tales Game Modes</a>	  
+	  <a class="navbar-brand" href="GROUP14.html"><i class="bi bi-house-door-fill"></i></a>
+    </div>	
+  </nav>
 
-			<br/>Rewards and Progression: Completing stages rewards players with experience points, gold, equipment, and sometimes new heroes. Each stage offers stars for completing specific objectives, such as finishing the stage, collecting all star pieces, and gathering purple coins. Earning these stars unlocks additional rewards and contributes to overall progression.
-		</p>
-	</div>
+  <div class="container py-5">
+    <div class="row gy-4">		
 
-	<div class="game-mode">
-		<h2 class="mode-title">Colosseum</h2>
-		<p class="mode-description">
-			Gameplay Mechanics: An automated PvP mode where players assemble a team of four heroes to battle against another player's team. Battles play out automatically, but strategic placement and team composition are crucial for victory.<br>
+      <div class="col-md-6">
+        <div class="card game-mode-card" id="advent">         
+        </div>
+      </div>
+	  
+      <div class="col-md-6">
+        <div class="card game-mode-card">
+          <div class="card-body">
+            <h2 class="mode-title">Adventure</h2>
+            <p class="mode-description">
+              Automated PvP mode focused on team strategy. Players navigate through story-driven stages, defeat enemies, solve environmental puzzles, and uncover hidden secrets to progress.<br><br>
+              <strong>Rewards:</strong> Gems, higher rank bonuses.
+            </p>
+          </div>
+        </div>
+      </div>
 
-			<br/>Rewards and Progression: Success in the Colosseum increases your ranking, which resets 
-			periodically. Higher rankings yield better rewards, including gems and other valuable resources.
-		</div>
+      <div class="col-md-6">
+        <div class="card game-mode-card" id="Arena">          
+        </div>
+      </div>
 
-		<div class="game-mode">
-			<h2 class="mode-title">Arena</h2>
-			<p class="mode-description">
-				Gameplay Mechanics: A real-time PvP mode where players control one of three selected heroes in direct combat against another player. If the first hero is defeated, the next one steps in, continuing until all heroes on one side are defeated.<br>
+      <div class="col-md-6">
+        <div class="card game-mode-card">
+          <div class="card-body">
+            <h2 class="mode-title">Arena</h2>
+            <p class="mode-description">
+              Real-time 1v1 PvP, rotating heroes upon defeat. If the first hero is defeated, the next one steps in, continuing until all heroes on one side are defeated.
+			  <br><br>
+              <strong>Rewards:</strong> Gems, gold, and seasonal rank rewards.
+            </p>
+          </div>
+        </div>
+      </div>
+	  
+      <div class="col-md-6">
+        <div class="card game-mode-card" id="guild">          
+        </div>
+      </div>
 
-				<br/>Rewards and Progression: Players earn points based on victories, which contribute to their seasonal ranking. At the end of each season, players receive rewards such as gems, gold, and exclusive items based on their final rank.
-			</div>
+      <div class="col-md-6">
+        <div class="card game-mode-card">
+          <div class="card-body">
+            <h2 class="mode-title">Guild Raid</h2>
+            <p class="mode-description">
+              Team up with guild members to defeat bosses. Each member's contribution helps in bringing down the boss, and rewards are distributed based on participation and performance.<br><br>
+              <strong>Rewards:</strong> Guild coins, gear, and ranking rewards.
+            </p>
+          </div>
+        </div>
+      </div>
 
-			<div class="game-mode">
-				<h2 class="mode-title">Kama-Zone</h2>
-				<p class="mode-description">
-					Gameplay Mechanics: A roguelike mode where players progress through multiple floors filled with battles, events, and rewards. Each floor presents unique challenges, and players must manage their team's health and resources to reach the top.<br>
+      <div class="col-md-6">
+        <div class="card game-mode-card" id="rift">          
+        </div>
+      </div>
 
-					<br/>Rewards and Progression: Clearing floors grants various rewards, including equipment, gold, and special items. Progressing through higher difficulty levels offers better rewards and contributes to overall player progression.
-				</div>
+      <div class="col-md-6">
+        <div class="card game-mode-card">
+          <div class="card-body">
+            <h2 class="mode-title">Rift & Mirror Rift</h2>
+            <p class="mode-description">
+              Farm evolution stones and elemental materials. Mirror Rift is divided into elemental categories like Basic, Dark, Light, Water, Earth, and Fire corresponding to the elements of heroes and weapons.<br><br>
+              <strong>Rewards:</strong> Upgrade materials for heroes and weapons.
+            </p>
+          </div>
+        </div>
+      </div>
 
-				<div class="game-mode">
-					<h2 class="mode-title">Co-op Expedition</h2>
-					<p class="mode-description">
-						Gameplay Mechanics: A multiplayer mode allowing up to four players to team up and tackle dungeon challenges together. Coordination and teamwork are key to overcoming the obstacles in this mode.<br>
+      <div class="col-md-6">
+        <div class="card game-mode-card" id="tale">         
+        </div>
+      </div>
 
-						<br/>Rewards and Progression: Successful completion of co-op dungeons yields rewards such as gold, experience, and equipment. Participating in co-op events can also grant exclusive items and contribute to event-specific progression.
-					</div>
+      <div class="col-md-6">
+        <div class="card game-mode-card">
+          <div class="card-body">
+            <h2 class="mode-title">The Tale of the Tetis Hero</h2>
+            <p class="mode-description">
+              PvE roguelike auto-battler with energy strategy. Heroes fight automatically, but players can manually activate weapon and chain skills if desired<br><br>
+              <strong>Rewards:</strong> Loot, stat boosts, and Guardian Tactic buffs.
+            </p>
+          </div>
+        </div>
+      </div>
 
-					<div class="game-mode">
-						<h2 class="mode-title">Guild Raid</h2>
-						<p class="mode-description">
-							Gameplay Mechanics: A collaborative mode where guild members work together to defeat powerful bosses. Each member's contribution helps in bringing down the boss, and rewards are distributed based on participation and performance.<br>
+	  <img src="group.png" class="img-fluid rounded mb-3" alt="Guardian Tales">
 
-							<br/>Rewards and Progression: Defeating raid bosses grants guild members rewards like guild coins, equipment, and other valuable resources. Consistent participation and high performance can lead to better rewards and strengthen the guild's overall standing.
-						</div>
 
-						<div class="game-mode">
-							<h2 class="mode-title">Orbital Rift</h2>
-							<p class="mode-description">
-								Gameplay Mechanics: A challenging mode featuring over 600 levels where players face off against AI-controlled enemies. Players can adjust their team's formation and strategy as they ascend the elevator, with increasing difficulty at higher levels.<br>
-
-								<br/>Rewards and Progression: Each level cleared grants rewards such as gold, experience, and equipment. Higher levels offer better rewards, and reaching new heights contributes to player progression and achievement milestones.
-							</div>
-
-							<div class="game-mode">
-								<h2 class="mode-title">Rift & Mirror Rift</h2>
-								<p class="mode-description">
-									Gameplay Mechanics: Resource farming modes where players can collect various materials such as evolution stones, gold, and experience. Mirror Rift is divided into elemental categories—Basic, Dark, Light, Water, Earth, and Fire—corresponding to the elements of heroes and weapons.<br>
-
-									<br/>Rewards and Progression: Completing rift stages yields resources necessary for hero and equipment upgrades. Regularly farming these modes ensures a steady supply of materials for progression.
-								</div>
-
-								<div class="game-mode">
-									<h2 class="mode-title">Tower Modes</h2>
-									<p class="mode-description">
-										Gameplay Mechanics: These include various tower challenges that test players' problem-solving skills and combat abilities. Each floor presents different puzzles or enemies, requiring strategic thinking to ascend.<br>
-
-										<br/>Rewards and Progression: Clearing tower floors rewards players with gems, equipment, and other valuable items. Completing all floors in a tower can yield significant rewards and contribute to overall progression.
-									</div>
-
-									<div class="game-mode">
-										<h2 class="mode-title">The Tale of the Tetis Hero</h2>
-										<p class="mode-description">
-											Gameplay Mechanics: A seasonal PvE game mode combining strategic auto-battling with roguelike progression. Players assemble a party of up to 8 heroes, selecting 4 to deploy in battles. Heroes fight automatically, but players can manually activate weapon and chain skills if desired. Deploying heroes and using Guardian Spells consume energy, which replenishes over time. Strategic energy management is crucial for success.<br>
-
-											<br/>Rewards and Progression: Clearing stages rewards players with various loot items that can enhance hero stats or provide unique effects. As players progress, they earn Guardian Tactic Experience, increasing their Guardian Tactic Level and unlocking Season Specialties—buffs and enhancements that can significantly impact gameplay.
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    </div>
+  </div>  
+  
 </body>
 </html>

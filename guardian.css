@@ -223,3 +223,11 @@ img:hover, header h2:hover {
     text-decoration: underline;
 }
 
+@media only screen and (max-width: 375px) {
+}
+
+@media only screen and (min-width: 376px) and (max-width: 480px) {
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px) {
+}
